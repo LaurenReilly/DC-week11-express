@@ -8,10 +8,8 @@ const app = express();
 const port = 3000;
 
 //use the get function to set a route
-app.get('/', function(req, res) {
-    res.send('Hello from Lauren!');
+app.get('/ping', function(req, res) {
+    res.send('PONG');
 });
 
 app.listen(port);
-
-//now if you go to localhost:3000 you will see your message!
